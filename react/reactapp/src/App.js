@@ -4,7 +4,7 @@ import './App.css'
 function App() {
   let [count, setCount] = useState(0)
   useEffect(()=>{
-    window.parent.postMessage(count, 'http://localhost:3001');
+    window.parent.postMessage(count, 'http://3.21.211.144:6022');
   },[count])
   return (
     <>
